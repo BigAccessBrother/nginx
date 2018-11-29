@@ -15,6 +15,10 @@ services:
 volumes:
   frontend:
     external: true
+  media-files:
+    external: true
+  static-files:
+    external: true
 
 networks:
   default:
