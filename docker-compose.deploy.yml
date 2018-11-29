@@ -9,6 +9,8 @@ services:
       - "443:443"
     volumes:
       - frontend:/frontend
+      - media-files:/media-files
+      - static-files:/static-files
       - "/etc/letsencrypt:/etc/letsencrypt:ro"
       - "/etc/nginx/ssl/dhparam.pem:/etc/ssl/certs/dhparam.pem:ro"
 
