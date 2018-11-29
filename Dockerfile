@@ -12,7 +12,6 @@ RUN echo 'export PATH=/opt/miniconda/bin:$PATH' > /etc/profile.d/conda.sh && \
 ENV PATH /opt/miniconda/bin:$PATH
 RUN pip install jinja2==2.9.4
 
-COPY ./htpasswd /
 COPY ./template.conf /templates/
 COPY ./render_template.py /templates/
 COPY ./start.sh /
